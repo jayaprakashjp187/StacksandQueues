@@ -8,7 +8,7 @@ namespace StacksAndQueues
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to the stacks and queues program");
-            Console.WriteLine("1.Creating a stack");
+            Console.WriteLine("1.Creating a stack\n2.by using pop and peek method in stack\n3.creating a queue");
             int choose = Convert.ToInt32(Console.ReadLine());
             switch (choose)
             {
@@ -50,6 +50,22 @@ namespace StacksAndQueues
                     }
             
                      break;
+                    case 3:
+                    Console.WriteLine("welcome to queue program");
+                    Queue<int> queue = new Queue<int>();
+
+                    // Enqueue elements to the queue
+                    queue.Enqueue(56);
+                    queue.Enqueue(30);
+                    queue.Enqueue(70);
+
+                    Console.WriteLine("Elements in the queue:");
+                    foreach (int item in queue)
+                    {
+                        Console.WriteLine(item);
+                    }
+
+                    break;
                  
            
 
