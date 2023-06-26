@@ -66,10 +66,30 @@ namespace StacksAndQueues
                     }
 
                     break;
+                case 4:
+                    Console.WriteLine("using dequeue method ");
+                    LinkedList<int> q = new LinkedList<int>();
+
+                    // Enqueue elements to the queue
+                    q.AddLast(56);
+                    q.AddLast(30);
+                    q.AddLast(70);
+
+                    Console.WriteLine("Elements in the queue:");
+                    foreach (int item in q)
+                    {
+                        Console.WriteLine(item);
+                    }
+                    
+                    Console.WriteLine("Dequeued element: " + q.First.Value);
+                    q.RemoveFirst();
+                    break;
+            }
+            
                  
            
 
-             }
+             
         }
     }
 }
